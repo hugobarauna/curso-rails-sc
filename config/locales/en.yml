@@ -3,3 +3,8 @@
 
 en:
   hello: "Hello world"
+
+  helpers:
+    submit:
+      company:
+        create: "Signup"

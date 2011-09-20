@@ -3,7 +3,6 @@ Feature: Signup
   As a company
   I want to signup for JobBoard
 
-  @wip
   Scenario: Successful signup
     Given I represent the PlataformaTec company
      When I go to the home page
@@ -11,6 +10,7 @@ Feature: Signup
       And signup for the site
      Then I should see "Signup successful"
 
+  @wip
   Scenario: Unsuccessful signup
     Given I am on the signup page
      When I press "Signup"
