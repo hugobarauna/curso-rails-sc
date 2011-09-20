@@ -3,6 +3,8 @@ class Company < ActiveRecord::Base
   validates :password, :confirmation => true
   validates :username, :uniqueness => true
 
+  has_many :job_offers
+
   attr_reader :password
 
   def password=(password)

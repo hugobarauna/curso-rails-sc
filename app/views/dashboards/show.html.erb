@@ -1,8 +1,12 @@
 <h1>My dashboard</h1>
 
-<%= link_to "Post a job offer", "#" %>
+<%= link_to "Post a job offer", new_dashboard_job_offer_path %>
 
 <h2>My job offers</h2>
 <ul>
-
+  <% @job_offers.each do |job_offer| %>
+    <li>
+      <%= job_offer.title %>
+    </li>
+  <% end %>
 </ul>
