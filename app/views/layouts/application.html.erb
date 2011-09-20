@@ -8,6 +8,17 @@
 </head>
 <body>
 
+<div>
+  <% if current_company %>
+    <%= link_to 'Logout', logout_path %>
+  <% else %>
+    <%= link_to 'Login', login_path %> |
+    <%= link_to 'Signup', signup_path %>
+  <% end %>
+</div>
+
+<%= render_flash_messages %>
+
 <%= yield %>
 
 </body>

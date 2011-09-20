@@ -10,7 +10,6 @@ Feature: Signup
       And signup for the site
      Then I should see "Signup successful"
 
-  @wip
   Scenario: Unsuccessful signup
     Given I am on the signup page
      When I press "Signup"
