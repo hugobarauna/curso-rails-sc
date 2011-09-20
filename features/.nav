@@ -1,0 +1,6 @@
+- company:
+  - signup.feature
+  - login.feature
+  - post_job_offer.feature
+- visitor:
+  - list_job_offers.feature

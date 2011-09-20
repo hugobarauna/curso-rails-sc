@@ -12,7 +12,7 @@ gem 'mysql2'
 # in production environments by default.
 group :assets do
   gem 'sass-rails', "  ~> 3.1.0"
-  gem 'coffee-rails', "~> 3.1.0"
+  # gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
 end
 
@@ -25,5 +25,15 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+group :development, :test do
+  gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'rspec-rails', '~> 2.6'
+end
 
+group :test do
+  gem 'spork', '~> 0.9.0.rc'
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+end
