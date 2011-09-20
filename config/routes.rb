@@ -10,5 +10,6 @@ Jobboard::Application.routes.draw do
     resources :job_offers, :controller => "dashboards/job_offers"
   end
 
-  root :to => "companies#index"
+  resources :job_offers, :only => :index
+  root :to => "job_offers#index"
 end

@@ -18,6 +18,7 @@ class CompaniesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @company }
+      format.xml { render xml: @company}
     end
   end
 

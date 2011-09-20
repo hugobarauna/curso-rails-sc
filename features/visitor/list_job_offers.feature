@@ -1,4 +1,3 @@
-@undone
 Feature: List job offers
   In order to find a nice job
   As someone looking for a job
