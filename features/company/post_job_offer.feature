@@ -1,4 +1,3 @@
-@undone
 Feature: Post job offer
   In order to hire an employee
   As a company
